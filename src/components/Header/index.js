@@ -1,9 +1,14 @@
 import styled from "styled-components";
 
+const valign = {
+  top: "flex-start",
+  middle: "center",
+  bottom: "flex-end",
+};
+
 const Wrapper = styled.header`
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: ${props => valign[props.valign]};
   align-items: center;
   box-sizing: border-box;
   position: relative;
@@ -36,5 +41,9 @@ const Wrapper = styled.header`
     }
   }
 `;
+
+Wrapper.defaultProps = {
+  valign: "middle",
+};
 
 export default Wrapper;

@@ -1,6 +1,7 @@
 import React from "react";
 
 import Grid from "../components/Grid";
+import Spacer from "../components/Spacer";
 import Link from "../components/Link";
 import Skill from "../components/Skill";
 import Avatar from "../components/Avatar/index";
@@ -29,7 +30,7 @@ const Intro = () => {
           </p>
         </div>
 
-        <Footer>
+        <Footer className="animated fadeInUp">
           <Grid.Row>
             <Grid.Column>
               <h4>Phone</h4>

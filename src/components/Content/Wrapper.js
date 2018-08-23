@@ -10,6 +10,7 @@ const Wrapper = styled.div`
 
   display: flex;
   flex: 1 0;
+  flex-direction: column;
   align-items: center;
   padding: ${props => (props.fluid ? 0 : props.theme.content.padding)};
 
@@ -20,6 +21,7 @@ const Wrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     height: 100%;
+    width: 100%;
   }
 
   @media only screen and (max-width: 850px) {

@@ -13,6 +13,10 @@ const Wrapper = styled.div`
     position: initial;
   }
 
+  @media only screen and (max-height: 750px) {
+    position: initial;
+  }
+
   h4 {
     font-size: 14px;
     font-weight: 600;

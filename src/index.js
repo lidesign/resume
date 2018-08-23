@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { ThemeProvider } from "styled-components";
+import "animate.css/animate.min.css";
 
 import "./global";
 import theme from "./themes/light";
