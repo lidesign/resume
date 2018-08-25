@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOMServer from "react-dom/server";
+import { ServerStyleSheet, StyleSheetManager } from "styled-components";
 
 // import our main App component
 import App from "../../src/App";
@@ -17,12 +18,23 @@ export default (req, res, next) => {
       return res.status(404).end();
     }
 
+    const sheet = new ServerStyleSheet();
+
     // render the app as a string
-    const html = ReactDOMServer.renderToString(<App />);
+    const html = ReactDOMServer.renderToString(
+      <StyleSheetManager sheet={sheet.instance}>
+        <App />
+      </StyleSheetManager>
+    );
+
+    const styleTags = sheet.getStyleTags();
 
     // inject the rendered app into our html and send it
     return res.send(
-      htmlData.replace('<div id="root"></div>', `<div id="root">${html}</div>`)
+      htmlData.replace(
+        '<div id="root"></div>',
+        `${styleTags}<div id="root">${html}</div>`
+      )
     );
   });
 };
