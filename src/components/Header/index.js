@@ -14,8 +14,8 @@ const Wrapper = styled.header`
   position: relative;
 
   background: ${props =>
-    props.alt && props.theme.header.alt.background
-      ? props.theme.header.alt.background
+    props.odd && props.theme.header.odd.background
+      ? props.theme.header.odd.background
       : props.theme.header.background};
   color: ${props => props.theme.header.color};
   text-align: right;

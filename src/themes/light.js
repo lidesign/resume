@@ -4,7 +4,7 @@ export default {
     padding: "80px",
     background: "#fcfcfc",
     color: "#515151",
-    alt: {
+    odd: {
       background: "#fff",
     },
   },
@@ -12,7 +12,7 @@ export default {
     padding: "40px",
     background: "#fff",
     color: "#000",
-    alt: {
+    odd: {
       background: "url('/topography.png') fixed",
     },
   },

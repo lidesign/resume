@@ -9,10 +9,10 @@ import Timeline from "../components/Timeline/index";
 const History = () => {
   return (
     <Section>
-      <Header alt>
+      <Header odd>
         <h2>Career History</h2>
       </Header>
-      <Content alt fluid>
+      <Content odd fluid>
         <Timeline entries={history} />
       </Content>
     </Section>

@@ -3,8 +3,8 @@ import styled from "styled-components";
 const Wrapper = styled.div`
   box-sizing: border-box;
   background: ${props =>
-    props.alt && props.theme.content.alt.background
-      ? props.theme.content.alt.background
+    props.odd && props.theme.content.odd.background
+      ? props.theme.content.odd.background
       : props.theme.content.background};
   color: ${props => props.theme.content.color};
 
