@@ -9,19 +9,19 @@ const Wrapper = styled.div`
   padding: 8em 0;
 
   &::after {
-    content: '';
+    content: "";
     display: table;
     clear: both;
   }
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 18px;
     height: 100%;
     width: 4px;
-    background: ${props => props.theme.timeline.background};
+    background: ${props => props.theme.timeline_background};
     opacity: 0.5;
   }
 `;

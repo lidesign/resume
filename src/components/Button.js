@@ -3,7 +3,7 @@ import styled from "styled-components";
 const Link = styled.a`
   display: inline-block;
   color: #fff;
-  background: ${props => props.theme.primary};
+  background: ${props => props.theme.primary_color};
   padding: 20px 20px;
   margin: 18px 0;
   border-radius: 4px;

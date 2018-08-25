@@ -10,18 +10,18 @@ const Wrapper = styled.div`
   width: 400px;
   min-height: 200px;
   padding: 45px 60px;
-  background: ${props => props.theme.panel.background};
-  border-radius: ${props => props.theme.panel.radius};
+  background: ${props => props.theme.panel_background};
+  border-radius: ${props => props.theme.panel_radius};
 
   @media only screen and (max-width: 850px) {
-    background: ${props => props.theme.panel.fullscreen.background};
+    background: ${props => props.theme.panel_background_fullscreen};
     width: 100%;
     height: 100%;
   }
 
   p {
     b {
-      color: ${props => props.theme.primary};
+      color: ${props => props.theme.primary_color};
     }
   }
 `;

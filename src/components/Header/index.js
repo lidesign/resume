@@ -14,14 +14,14 @@ const Wrapper = styled.header`
   position: relative;
 
   background: ${props =>
-    props.odd && props.theme.header.odd.background
-      ? props.theme.header.odd.background
-      : props.theme.header.background};
-  color: ${props => props.theme.header.color};
+    props.odd && props.theme.header_background_odd
+      ? props.theme.header_background_odd
+      : props.theme.header_background};
+  color: ${props => props.theme.header_color};
   text-align: right;
 
   width: 30%;
-  padding: ${props => props.theme.header.padding};
+  padding: ${props => props.theme.header_padding};
 
   @media only screen and (max-width: 850px) {
     width: 100%;

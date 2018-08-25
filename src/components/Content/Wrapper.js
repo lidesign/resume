@@ -3,16 +3,16 @@ import styled from "styled-components";
 const Wrapper = styled.div`
   box-sizing: border-box;
   background: ${props =>
-    props.odd && props.theme.content.odd.background
-      ? props.theme.content.odd.background
-      : props.theme.content.background};
-  color: ${props => props.theme.content.color};
+    props.odd && props.theme.content_background_odd
+      ? props.theme.content_background_odd
+      : props.theme.content_background};
+  color: ${props => props.theme.content_color};
 
   display: flex;
   flex: 1 0;
   flex-direction: column;
   align-items: center;
-  padding: ${props => (props.fluid ? 0 : props.theme.content.padding)};
+  padding: ${props => (props.fluid ? 0 : props.theme.content_padding)};
 
   > div {
     position: relative;
@@ -33,7 +33,7 @@ const Wrapper = styled.div`
 
   h2 {
     font-size: 24px;
-    color: ${props => props.theme.primary};
+    color: ${props => props.theme.primary_color};
     border-bottom: 1px solid #eee;
     padding-bottom: 10px;
     margin-bottom: 30px;
@@ -48,7 +48,7 @@ const Wrapper = styled.div`
     margin-top: 10px;
 
     b {
-      color: ${props => props.theme.primary};
+      color: ${props => props.theme.primary_color};
       font-weight: 400;
     }
   }
