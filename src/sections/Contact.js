@@ -1,9 +1,7 @@
 import React from "react";
 import ScrollAnimation from "react-animate-on-scroll";
 
-import history from "../data/history";
 import Section from "../components/Section/index";
-import Header from "../components/Header/index";
 import Content from "../components/Content/index";
 import Map from "../components/Map/index";
 import Button from "../components/Button";

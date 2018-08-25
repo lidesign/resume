@@ -1,19 +1,9 @@
 import React from "react";
 
-import history from "../data/history";
 import Section from "../components/Section/index";
 import Header from "../components/Header/index";
 import Content from "../components/Content/index";
-import Timeline from "../components/Timeline/index";
 import Skill from "../components/Skill";
-
-const frontend_skills = [
-  "JavaScript",
-  "React.js",
-  "Redux",
-  "redux-saga",
-  "styled-components"
-];
 
 const About = () => {
   return (

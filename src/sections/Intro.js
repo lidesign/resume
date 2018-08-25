@@ -1,7 +1,6 @@
 import React from "react";
 
 import Grid from "../components/Grid";
-import Spacer from "../components/Spacer";
 import Link from "../components/Link";
 import Skill from "../components/Skill";
 import Avatar from "../components/Avatar/index";
