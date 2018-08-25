@@ -12,7 +12,7 @@ const frontend_skills = [
   "React.js",
   "Redux",
   "redux-saga",
-  "styled-components",
+  "styled-components"
 ];
 
 const About = () => {
@@ -26,12 +26,12 @@ const About = () => {
           <h2>Professional Skills</h2>
           <p>
             When it comes to front-end work, I'm comfortable working with{" "}
-            <Skill>JavaScript</Skill>, <Skill>webpack</Skill>,{" "}
-            <Skill>babel</Skill>, <Skill>React.js</Skill>,{" "}
-            <Skill>react-router</Skill>, <Skill>redux</Skill>,{" "}
-            <Skill>redux-saga</Skill>, <Skill>styled-components</Skill>,{" "}
-            <Skill>emotion</Skill>, <Skill>Firebase</Skill>,{" "}
-            <Skill>Auth0</Skill>, and <Skill>Stripe</Skill>.
+            <Skill>ES6</Skill>, <Skill>webpack</Skill>, <Skill>babel</Skill>,{" "}
+            <Skill>React.js</Skill>, <Skill>react-router</Skill>,{" "}
+            <Skill>redux</Skill>, <Skill>redux-saga</Skill>,{" "}
+            <Skill>styled-components</Skill>, <Skill>emotion</Skill>,{" "}
+            <Skill>Firebase</Skill>, <Skill>Auth0</Skill>, and{" "}
+            <Skill>Stripe</Skill>.
           </p>
           <p>
             With non-front-end work, I have past experience working with{" "}
@@ -41,9 +41,9 @@ const About = () => {
           </p>
           <p>
             I am also confident in my abilities to adapt and learn new
-            frameworks. I believe that one of the most valuable traits in a
-            developer is to never stop learning, so it has been my mantra
-            throughout my career.
+            frameworks, languages, and methodologies. I believe that one of the
+            most valuable traits a developer can have is to never stop learning,
+            so it has been my mantra throughout my career to do just that.
           </p>
         </div>
 

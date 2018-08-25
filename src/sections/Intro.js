@@ -47,7 +47,8 @@ const Intro = () => {
             <Grid.Column>
               <h4>Availability</h4>
               <p>
-                Seeking Full-Time<br />or Contract work.
+                Seeking Full-Time <br />
+                or Contract work.
               </p>
             </Grid.Column>
             <Grid.Column>
