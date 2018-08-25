@@ -15,7 +15,7 @@ export default {
   timeline_padding: "40px",
   timeline_background: "#F688AD",
 
-  panel_padding: "80px",
+  panel_padding: "40px 60px",
   panel_background: "#fff",
   panel_background_fullscreen: "rgba(255, 255, 255, 0.75)",
   panel_radius: "8px",

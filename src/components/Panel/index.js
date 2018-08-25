@@ -9,7 +9,7 @@ const Wrapper = styled.div`
   align-items: center;
   width: 400px;
   min-height: 200px;
-  padding: 45px 60px;
+  padding: ${props => props.theme.panel_padding};
   background: ${props => props.theme.panel_background};
   border-radius: ${props => props.theme.panel_radius};
 
