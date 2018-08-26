@@ -53,8 +53,8 @@ const Intro = () => {
             <Grid.Column>
               <h4>GitHub</h4>
               <p>
-                <Link href="https://github.com/gareteliot" target="_blank">
-                  @gareteliot
+                <Link href="https://github.com/garetmckinley" target="_blank">
+                  @garetmckinley
                 </Link>{" "}
               </p>
             </Grid.Column>
