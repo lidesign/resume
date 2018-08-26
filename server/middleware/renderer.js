@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOMServer from "react-dom/server";
 import { ServerStyleSheet, StyleSheetManager } from "styled-components";
+import Helmet from "react-helmet";
 
 // import our main App component
 import App from "../../src/App";
@@ -27,14 +28,20 @@ export default (req, res, next) => {
       </StyleSheetManager>
     );
 
+    const helmet = Helmet.renderStatic();
     const styleTags = sheet.getStyleTags();
 
     // inject the rendered app into our html and send it
     return res.send(
-      htmlData.replace(
-        '<div id="root"></div>',
-        `${styleTags}<div id="root">${html}</div>`
-      )
+      htmlData
+        .replace(
+          '<div id="root"></div>',
+          `${styleTags}<div id="root">${html}</div>`
+        )
+        .replace(
+          "</head>",
+          `${helmet.title.toString()}${helmet.meta.toString()}${helmet.link.toString()}</head>`
+        )
     );
   });
 };

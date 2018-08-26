@@ -1,6 +1,7 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
 import ReactGA from "react-ga";
+import { Helmet } from "react-helmet";
 import "animate.css/animate.min.css";
 
 import "./global";
@@ -19,6 +20,9 @@ if (process.env.NODE_ENV === "production") {
 const App = () => (
   <ThemeProvider theme={theme}>
     <Container>
+      <Helmet>
+        <title>Garet McKinley</title>
+      </Helmet>
       <Intro />
       <History />
       <About />
