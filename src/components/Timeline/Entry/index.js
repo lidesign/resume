@@ -5,7 +5,7 @@ import Image from "./Image";
 import Bubble from "./Bubble";
 
 const Entry = ({ date, title, logo, position, content }) => (
-  <Wrapper animateIn="bounceInRight" duration={0.5}>
+  <Wrapper animateIn="fadeInUp" duration={0.5} animateOnce>
     <Image>
       <img src={logo} alt="Logo" />
     </Image>
