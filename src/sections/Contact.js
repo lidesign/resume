@@ -9,7 +9,7 @@ import Panel from "../components/Panel";
 
 const History = () => {
   return (
-    <Section>
+    <Section odd>
       <Content fluid>
         <Map>
           <Panel>

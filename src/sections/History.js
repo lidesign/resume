@@ -8,7 +8,7 @@ import Timeline from "../components/Timeline/index";
 
 const History = () => {
   return (
-    <Section>
+    <Section odd>
       <Header odd>
         <h2>Career History</h2>
       </Header>

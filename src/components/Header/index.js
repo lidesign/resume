@@ -8,6 +8,7 @@ const valign = {
 
 const Wrapper = styled.header`
   display: flex;
+  flex-direction: column;
   justify-content: ${props => valign[props.valign]};
   align-items: center;
   box-sizing: border-box;
@@ -17,7 +18,10 @@ const Wrapper = styled.header`
     props.odd && props.theme.header_background_odd
       ? props.theme.header_background_odd
       : props.theme.header_background};
-  color: ${props => props.theme.header_color};
+  color: ${props =>
+    props.odd && props.theme.header_color_odd
+      ? props.theme.header_color_odd
+      : props.theme.header_color};
   text-align: right;
 
   width: 30%;
@@ -28,6 +32,10 @@ const Wrapper = styled.header`
     height: 200px;
     padding: 35px;
     text-align: center;
+  }
+
+  * {
+    z-index: 2;
   }
 
   h2 {

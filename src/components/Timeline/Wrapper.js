@@ -22,7 +22,6 @@ const Wrapper = styled.div`
     height: 100%;
     width: 4px;
     background: ${props => props.theme.timeline_background};
-    opacity: 0.5;
   }
 `;
 

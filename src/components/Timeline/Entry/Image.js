@@ -7,14 +7,28 @@ const Image = styled.div`
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  box-shadow: 0 0 0 4px #ffffff, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
 
   img {
+    position: relative;
     display: block;
     background: #fff;
     width: 100%;
-    position: relative;
     border-radius: 50%;
+    position: relative;
+    transform: scale(1.035);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -5%;
+    left: -5%;
+    width: 110%;
+    height: 110%;
+    border-radius: 50%;
+    border: 3px solid ${props => props.theme.timeline_background};
+    box-sizing: border-box;
+  }
 `;
 
 export default Image;

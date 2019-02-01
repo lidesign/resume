@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { lighten } from "polished";
 
 const Wrapper = styled.div`
   position: relative;
@@ -6,7 +7,7 @@ const Wrapper = styled.div`
   background: ${props => props.theme.timeline_background};
   border-radius: 0.25em;
   padding: 1em 2em;
-  box-shadow: 0 3px 0 ${props => props.theme.primary_color};
+  box-shadow: 0 4px 0 ${props => lighten(0.1, props.theme.timeline_background)};
 
   h3,
   h4 {

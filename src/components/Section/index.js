@@ -1,15 +1,75 @@
+import React from "react";
 import styled from "styled-components";
 
-const Section = styled.section`
-  background: gray;
-  min-height: 100%;
+const slants = {
+  bottom: () => `bottom: -100px;`,
+  top: () => ``,
+  both: ({ reversed }) => `
+  &:first-of-type {
+    top: -100px;
+    transform: rotateZ(180deg) ${reversed && `rotateY(180deg)`};
+  }
+  bottom: -100px;`,
+};
+
+const Wrapper = styled.section`
+  position: relative;
+  min-height: 110%;
   max-width: 100%;
-  overflow: hidden;
   display: flex;
+  overflow: visible;
+  background: ${props =>
+    props.odd && props.theme.content_background_odd
+      ? props.theme.content_background_odd
+      : props.theme.content_background};
+  ${props => props.background && `background: ${props.background};`}
 
   @media only screen and (max-width: 850px) {
     flex-direction: column;
   }
+
+  &:first-of-type {
+    min-height: 100%;
+  }
+
+  svg {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    height: 100px;
+    width: 100%;
+
+    ${props => slants[props.slant]}
+    ${props => props.reversed && `transform: rotateY(180deg);`}
+
+    polygon {
+      fill: ${props => props.theme.content_background};
+    }
+  }
 `;
+
+const Section = ({ children, slant, odd, ...props }) => (
+  <Wrapper odd={odd} slant={slant} {...props}>
+    {children}
+    {slant && (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 100 100"
+        preserveAspectRatio="none"
+      >
+        <polygon points="100,0 0,100 0,0" />
+      </svg>
+    )}
+    {slant === "both" && (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 100 100"
+        preserveAspectRatio="none"
+      >
+        <polygon points="100,0 0,100 0,0" />
+      </svg>
+    )}
+  </Wrapper>
+);
 
 export default Section;

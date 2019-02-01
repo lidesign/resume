@@ -7,7 +7,7 @@ import Skill from "../components/Skill";
 
 const About = () => {
   return (
-    <Section>
+    <Section slant="both" reversed>
       <Header>
         <h2>About Me</h2>
       </Header>
@@ -16,10 +16,11 @@ const About = () => {
           <h2>Professional Skills</h2>
           <p>
             When it comes to front-end work, I'm comfortable working with{" "}
-            <Skill>ES6</Skill>, <Skill>webpack</Skill>, <Skill>babel</Skill>,{" "}
-            <Skill>React.js</Skill>, <Skill>react-router</Skill>,{" "}
-            <Skill>redux</Skill>, <Skill>redux-saga</Skill>,{" "}
-            <Skill>styled-components</Skill>, <Skill>emotion</Skill>,{" "}
+            <Skill>ES6</Skill>, <Skill>TypeScript</Skill>,{" "}
+            <Skill>webpack</Skill>, <Skill>babel</Skill>, <Skill>react</Skill>,{" "}
+            <Skill>react-router</Skill>, <Skill>redux</Skill>,{" "}
+            <Skill>redux-saga</Skill>, <Skill>styled-components</Skill>,{" "}
+            <Skill>emotion</Skill>, <Skill>Gatsby</Skill>,{" "}
             <Skill>Firebase</Skill>, <Skill>Auth0</Skill>, and{" "}
             <Skill>Stripe</Skill>.
           </p>

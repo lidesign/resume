@@ -8,24 +8,28 @@ import Section from "../components/Section/index";
 import Header from "../components/Header/index";
 import Footer from "../components/Footer/index";
 import Content from "../components/Content/index";
+import Status from "../components/Status";
 
 const Intro = () => {
   return (
-    <Section>
+    <Section slant="bottom">
       <Header>
-        <Avatar src="/avatar.jpg" />
+        <Avatar
+          src="/face-500.jpg"
+          alt="Portrait of Garet McKinley looking off into the distance"
+        />
       </Header>
       <Content>
         <div>
           <h2>Hello, I'm Garet McKinley</h2>
           <h3>
-            I'm a <b>Front-end Developer</b> currently located in New Orleans,
-            LA who is passionate about finding creative solutions to difficult
-            problems.
+            I'm a nomadic <b>Front-end Developer</b> who is passionate about
+            making the web faster and more accessible.
           </h3>
           <p>
-            I especially <Skill>❤</Skill> working with: <Skill>React</Skill>,{" "}
-            <Skill>Redux</Skill>, and <Skill>styled-components</Skill>.
+            I really <Skill className="glyph">❤</Skill> working with:{" "}
+            <Skill>React</Skill>, <Skill>Redux</Skill>, and{" "}
+            <Skill>styled-components</Skill>.
           </p>
         </div>
 
@@ -44,18 +48,24 @@ const Intro = () => {
               </p>
             </Grid.Column>
             <Grid.Column>
-              <h4>Availability</h4>
+              <h4>
+                Available <Status available />
+              </h4>
               <p>
-                Seeking Full-Time <br />
-                or Contract work.
+                For full-time <br />
+                or freelance work.
               </p>
             </Grid.Column>
             <Grid.Column>
-              <h4>GitHub</h4>
+              <h4>Social</h4>
               <p>
                 <Link href="https://github.com/garetmckinley" target="_blank">
-                  @garetmckinley
-                </Link>{" "}
+                  GitHub
+                </Link>
+                <br />
+                <Link href="https://twitter.com/garetmckinley" target="_blank">
+                  Twitter
+                </Link>
               </p>
             </Grid.Column>
           </Grid.Row>

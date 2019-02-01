@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 const Avatar = styled.img`
   width: 100%;
-  border-radius: 50%;
+  border-radius: 25px;
+  transform: rotateZ(-4deg);
 
   @media only screen and (max-width: 850px) {
     width: initial;

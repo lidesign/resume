@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Wrapper = styled.div`
-  border-top: 1px solid #eee;
+  border-top: 1px solid ${props => props.theme.content_separator};
   position: absolute;
   width: 100%;
   bottom: 0;
