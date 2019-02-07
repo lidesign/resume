@@ -18,6 +18,8 @@ const Wrapper = styled.div`
   }
 
   h4 {
+    display: flex;
+    align-items: center;
     font-size: 14px;
     font-weight: 600;
     text-transform: uppercase;

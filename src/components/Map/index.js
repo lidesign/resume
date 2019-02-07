@@ -8,31 +8,53 @@ const Wrapper = styled.div`
   justify-content: center;
   align-items: center;
 
-  background: #00adef;
-  background: -moz-linear-gradient(-45deg, #00adef 0%, #0076e5 100%);
-  background: -webkit-linear-gradient(-45deg, #00adef 0%, #0076e5 100%);
-  background: linear-gradient(135deg, #00adef 0%, #0076e5 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00adef', endColorstr='#0076e5',GradientType=1 );
-  position: relative;
-  height: 700px;
-  width: 100%;
-  margin: 0px auto;
-  padding: 0px auto;
+  svg {
+    position: relative;
+    background: ${props => props.theme.colors.black};
+    height: 100%;
+    width: 100%;
+  }
 `;
 
-const Starfield = ({ children, ...props }) => {
+const randRange = (min, max) => Math.random() * (max - min) + min;
+
+const spawnStars = (width, height, maxSize, count) => {
+  const stars = [];
+  for (let i = 0; i < count; i++) {
+    console.log("what");
+    stars.push(
+      <circle
+        fill="#fff"
+        cx={randRange(0, width)}
+        cy={randRange(0, height)}
+        r={randRange(0.05, maxSize)}
+        style={{
+          animation: `twinkle ${randRange(1, 10)}s ease-in-out infinite`,
+        }}
+      />
+    );
+  }
+  return stars;
+};
+
+const Starfield = ({ width, height, stars, maxSize = 0.75, ...props }) => (
+  <svg
+    viewBox={`0 0 ${width} ${height}`}
+    xmlns="http://www.w3.org/2000/svg"
+    style={{ position: "absolute", zIndex: -1 }}
+    preserveAspectRatio="none"
+  >
+    {spawnStars(width, height, maxSize, stars)}
+  </svg>
+);
+
+const Map = ({ children, ...props }) => {
   return (
     <Wrapper {...props}>
       {children}
-      <div id="container-inside">
-        <div id="circle-small" />
-        <div id="circle-medium" />
-        <div id="circle-large" />
-        <div id="circle-xlarge" />
-        <div id="circle-xxlarge" />
-      </div>
+      <Starfield width={800} height={800} stars={1000} />
     </Wrapper>
   );
 };
 
-export default Starfield;
+export default Map;

@@ -9,14 +9,15 @@ import Header from "../components/Header/index";
 import Footer from "../components/Footer/index";
 import Content from "../components/Content/index";
 import Status from "../components/Status";
+import ProfilePicture from "../images/face-500.jpg";
 
 const Intro = () => {
   return (
-    <Section slant="bottom">
+    <Section slant="bottom" layer={3}>
       <Header>
         <Avatar
-          src="/face-500.jpg"
-          alt="Portrait of Garet McKinley looking off into the distance"
+          src={ProfilePicture}
+          alt="Garet staring off into the distance"
         />
       </Header>
       <Content>
@@ -49,7 +50,7 @@ const Intro = () => {
             </Grid.Column>
             <Grid.Column>
               <h4>
-                Available <Status available />
+                Available <Status available size={12} />
               </h4>
               <p>
                 For full-time <br />

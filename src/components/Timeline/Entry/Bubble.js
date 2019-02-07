@@ -7,11 +7,15 @@ const Wrapper = styled.div`
   background: ${props => props.theme.timeline_background};
   border-radius: 0.25em;
   padding: 1em 2em;
-  box-shadow: 0 4px 0 ${props => lighten(0.1, props.theme.timeline_background)};
 
   h3,
   h4 {
+    font-size: 19px
     color: ${props => props.theme.timeline_color};
+
+    b {
+      font-weight: 600;
+    }
   }
 
   p {

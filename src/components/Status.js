@@ -20,6 +20,7 @@ const Status = styled.a`
   width: ${props => props.size}px;
   height: ${props => props.size}px;
   border-radius: 50%;
+  top: -1px;
   margin: 0 ${props => props.border}px;
   background: ${props => (props.available ? green : red)};
 

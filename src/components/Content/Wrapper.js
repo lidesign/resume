@@ -2,7 +2,8 @@ import styled from "styled-components";
 
 const Wrapper = styled.div`
   box-sizing: border-box;
-  color: ${props => props.theme.content_color};
+  color: ${props =>
+    props.odd ? props.theme.content_color_odd : props.theme.content_color};
 
   display: flex;
   flex: 1 0;
@@ -28,10 +29,19 @@ const Wrapper = styled.div`
     }
   }
 
+  h1 {
+    font-size: 120px;
+    font-weight: 700;
+  }
+
   h2 {
     font-size: 28px;
-    font-weight: 800;
-    border-bottom: 1px solid ${props => props.theme.content_separator};
+    font-weight: 600;
+    border-bottom: 1px solid
+      ${props =>
+        props.odd
+          ? props.theme.content_separator_odd
+          : props.theme.content_separator};
     padding-bottom: 10px;
     margin-bottom: 30px;
     line-height: 1.5;
@@ -39,21 +49,23 @@ const Wrapper = styled.div`
   }
 
   h3 {
-    color: ${props => props.theme.content_color};
+    color: ${props =>
+      props.odd ? props.theme.content_color_odd : props.theme.content_color};
     font-size: 28px;
     line-height: 1.5;
     margin-top: 10px;
 
     b {
-      color: ${props => props.theme.primary_color};
-      font-weight: 800;
+      color: ${props => props.theme.colors.secondary};
+      font-weight: 400;
     }
   }
 
   p {
     font-size: 18px;
     font-weight: 400;
-    color: ${props => props.theme.content_color};
+    color: ${props =>
+      props.odd ? props.theme.content_color_odd : props.theme.content_color};
     margin-bottom: 1.375rem;
     line-height: 1.5;
   }

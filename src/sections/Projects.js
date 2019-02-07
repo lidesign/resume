@@ -1,22 +1,20 @@
 import React from "react";
 
-import OSS from "../data/oss";
 import Section from "../components/Section/index";
 import Header from "../components/Header/index";
 import Content from "../components/Content/index";
 import Skill from "../components/Skill";
 import PostList from "../components/PostList";
-import List from "../components/List";
 
 const About = ({ posts }) => {
   return (
-    <Section slant="both" reversed layer={3}>
+    <Section>
       <Header>
-        <h2>About Me</h2>
+        <h2>My Work</h2>
       </Header>
       <Content>
         <div>
-          <h2>Professional Skills</h2>
+          <h2>Open Source</h2>
           <p>
             When it comes to front-end work, I'm comfortable working with{" "}
             <Skill>ES6</Skill>, <Skill>TypeScript</Skill>,{" "}
@@ -33,27 +31,16 @@ const About = ({ posts }) => {
             <Skill>electron</Skill>, <Skill>PostgreSQL</Skill>, and{" "}
             <Skill>Heroku</Skill>.
           </p>
+          <p>
+            I am also confident in my abilities to adapt and learn new
+            frameworks, languages, and methodologies. I believe that one of the
+            most valuable traits a developer can have is to never stop learning,
+            so it has been my mantra throughout my career to do just that.
+          </p>
         </div>
 
         <div>
-          <h2>Open Source</h2>
-          <List
-            items={OSS.map(project => (
-              <>
-                <a href={project.url} target="_blank" rel="noopener noreferrer">
-                  {project.name}
-                </a>
-                <span>
-                  : {project.description} &middot; {project.role} &middot; ★{" "}
-                  {project.stars}
-                </span>
-              </>
-            ))}
-          />
-        </div>
-
-        <div>
-          <h2>Writing</h2>
+          <h2>Blog Posts</h2>
           <PostList posts={posts} />
         </div>
       </Content>

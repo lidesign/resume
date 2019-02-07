@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Avatar = styled.img`
-  width: 100%;
+  max-width: 100%;
   border-radius: 25px;
   transform: rotateZ(-4deg);
 

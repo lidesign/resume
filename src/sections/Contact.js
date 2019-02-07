@@ -19,9 +19,7 @@ const History = () => {
               issue as I'm able to work remote or relocate for the right
               opportunity.
             </p>
-            <ScrollAnimation animateIn="fadeInUp" duration={0.5}>
-              <Button href="mailto:hi@garet.io">Get in Touch</Button>
-            </ScrollAnimation>
+            <Button href="mailto:hi@garet.io">Get in Touch</Button>
           </Panel>
         </Map>
       </Content>

@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import styled from "styled-components";
 
 const slants = {
@@ -23,6 +24,7 @@ const Wrapper = styled.section`
       ? props.theme.content_background_odd
       : props.theme.content_background};
   ${props => props.background && `background: ${props.background};`}
+  z-index: ${props => props.layer};
 
   @media only screen and (max-width: 850px) {
     flex-direction: column;
@@ -71,5 +73,14 @@ const Section = ({ children, slant, odd, ...props }) => (
     )}
   </Wrapper>
 );
+
+Section.propTypes = {
+  slant: PropTypes.oneOf(["top", "bottom", "both"]),
+  layer: PropTypes.number,
+};
+
+Section.defaultProps = {
+  layer: 1,
+};
 
 export default Section;
