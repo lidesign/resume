@@ -48,6 +48,7 @@
     "start": "gatsby serve",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
-    "lint": "eslint src/**/*.js"
+    "lint": "eslint src/**/*.js",
+    "heroku-postbuild": "npm run build"
   }
 }
