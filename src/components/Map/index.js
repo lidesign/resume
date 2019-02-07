@@ -21,7 +21,6 @@ const randRange = (min, max) => Math.random() * (max - min) + min;
 const spawnStars = (width, height, maxSize, count) => {
   const stars = [];
   for (let i = 0; i < count; i++) {
-    console.log("what");
     stars.push(
       <circle
         fill="#fff"
