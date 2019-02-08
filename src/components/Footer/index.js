@@ -24,6 +24,14 @@ const Footer = styled.footer`
     font-weight: 600;
     text-transform: uppercase;
   }
+
+  p {
+    svg {
+      fill: white;
+      max-height: 28px;
+      margin-right: 14px;
+    }
+  }
 `;
 
 export default Footer;

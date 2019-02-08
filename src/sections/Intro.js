@@ -9,7 +9,12 @@ import Header from "../components/Header/index";
 import Footer from "../components/Footer/index";
 import Content from "../components/Content/index";
 import Status from "../components/Status";
+
+// Images
 import ProfilePicture from "../images/face-500.jpg";
+import GitHub from "../icons/github";
+import Twitter from "../icons/twitter";
+import CodePen from "../icons/codepen";
 
 const Intro = () => {
   return (
@@ -61,11 +66,13 @@ const Intro = () => {
               <h4>Social</h4>
               <p>
                 <Link href="https://github.com/garetmckinley" target="_blank">
-                  GitHub
+                  <GitHub />
                 </Link>
-                <br />
                 <Link href="https://twitter.com/garetmckinley" target="_blank">
-                  Twitter
+                  <Twitter />
+                </Link>
+                <Link href="https://codepen.io/garetmckinley" target="_blank">
+                  <CodePen />
                 </Link>
               </p>
             </Grid.Column>

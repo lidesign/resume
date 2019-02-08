@@ -34,7 +34,7 @@ const Wrapper = styled.section`
     min-height: 100%;
   }
 
-  svg {
+  svg.slant {
     position: absolute;
     z-index: 2;
     left: 0;
@@ -58,6 +58,7 @@ const Section = ({ children, slant, odd, ...props }) => (
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 100 100"
         preserveAspectRatio="none"
+        className="slant"
       >
         <polygon points="100,0 0,100 0,0" />
       </svg>
@@ -67,6 +68,7 @@ const Section = ({ children, slant, odd, ...props }) => (
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 100 100"
         preserveAspectRatio="none"
+        className="slant"
       >
         <polygon points="100,0 0,100 0,0" />
       </svg>
