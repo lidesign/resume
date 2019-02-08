@@ -23,8 +23,8 @@ const Wrapper = styled.ul`
 
 const Footer = ({ items }) => (
   <Wrapper>
-    {items.map(child => (
-      <li>{child}</li>
+    {items.map((child, i) => (
+      <li key={i}>{child}</li>
     ))}
   </Wrapper>
 );

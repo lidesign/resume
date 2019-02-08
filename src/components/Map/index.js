@@ -23,6 +23,7 @@ const spawnStars = (width, height, maxSize, count) => {
   for (let i = 0; i < count; i++) {
     stars.push(
       <circle
+        key={i}
         fill="#fff"
         cx={randRange(0, width)}
         cy={randRange(0, height)}
