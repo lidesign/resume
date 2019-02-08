@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Link = styled.a`
+const Skill = styled.a`
   color: ${props => props.theme.colors.secondary};
   font-weight: 600;
   text-decoration: none;
@@ -13,4 +13,4 @@ const Link = styled.a`
   }
 `;
 
-export default Link;
+export default Skill;

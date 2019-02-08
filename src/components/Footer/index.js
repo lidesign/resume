@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const Wrapper = styled.div`
+const Footer = styled.footer`
   border-top: 1px solid ${props => props.theme.content_separator};
   position: absolute;
   width: 100%;
@@ -26,4 +26,4 @@ const Wrapper = styled.div`
   }
 `;
 
-export default Wrapper;
+export default Footer;

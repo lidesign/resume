@@ -6,7 +6,7 @@ const valign = {
   bottom: "flex-end",
 };
 
-const Wrapper = styled.header`
+const Header = styled.header`
   display: flex;
   flex-direction: column;
   justify-content: ${props => valign[props.valign]};
@@ -50,8 +50,8 @@ const Wrapper = styled.header`
   }
 `;
 
-Wrapper.defaultProps = {
+Header.defaultProps = {
   valign: "middle",
 };
 
-export default Wrapper;
+export default Header;

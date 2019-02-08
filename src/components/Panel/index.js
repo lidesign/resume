@@ -9,7 +9,7 @@ const scroll = keyframes`
   }
 `;
 
-const Wrapper = styled.div`
+const Panel = styled.div`
   position: relative;
   display: flex;
   box-sizing: border-box;
@@ -84,4 +84,4 @@ const Wrapper = styled.div`
   }
 `;
 
-export default Wrapper;
+export default Panel;

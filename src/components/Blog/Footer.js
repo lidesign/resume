@@ -17,7 +17,7 @@ const Wrapper = styled.footer`
   }
 `;
 
-const List = ({ items }) => (
+const Footer = ({ items }) => (
   <Wrapper>
     <Link to="/">
       <img src={Signature} alt="Garet McKinley's Signature" />
@@ -25,4 +25,4 @@ const List = ({ items }) => (
   </Wrapper>
 );
 
-export default List;
+export default Footer;

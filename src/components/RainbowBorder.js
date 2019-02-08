@@ -9,7 +9,7 @@ const scroll = keyframes`
   }
 `;
 
-const Wrapper = styled.div`
+const RainbowBorder = styled.div`
   display: inline-block;
   position: relative;
   width: ${props => props.width};
@@ -58,7 +58,7 @@ const Wrapper = styled.div`
   }
 `;
 
-Wrapper.defaultProps = {
+RainbowBorder.defaultProps = {
   radius: 5,
   speed: 5,
   thickness: 4,
@@ -66,4 +66,4 @@ Wrapper.defaultProps = {
   height: "100%",
 };
 
-export default Wrapper;
+export default RainbowBorder;

@@ -21,7 +21,7 @@ const Wrapper = styled.ul`
   }
 `;
 
-const List = ({ items }) => (
+const Footer = ({ items }) => (
   <Wrapper>
     {items.map(child => (
       <li>{child}</li>
@@ -29,4 +29,4 @@ const List = ({ items }) => (
   </Wrapper>
 );
 
-export default List;
+export default Footer;
