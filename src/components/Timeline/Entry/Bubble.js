@@ -10,7 +10,7 @@ const Wrapper = styled.div`
 
   h3,
   h4 {
-    font-size: 19px
+    font-size: 19px;
     color: ${props => props.theme.timeline_color};
 
     b {
